@@ -45,7 +45,7 @@ const Index = () => (
   <div>
     <GlobalStyle />
     <Head>
-      <title>louiejakebell</title>
+      <title>louie jake bell</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
     <HorizontalCenter>
@@ -57,10 +57,7 @@ const Index = () => (
       <Subtitle>My name is Louie.</Subtitle>
       <Paragraph>
         I am a Front End Developer working in central London{' '}
-        <Image src={Flag} width="24px" alt="flag" />. I currently work @{' '}
-        <Anchor target="_blank" href="https://www.dunelm.com/">
-          Dunelm
-        </Anchor>{' '}
+        <Image src={Flag} width="24px" alt="flag" />. I currently work @ Dunelm
         as a Front End Developer. Prior to this, I worked @ Gamesys starting off
         as a Graduate Software Engineer followed by a promotion to a Front End
         Developer.
