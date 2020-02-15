@@ -4,6 +4,8 @@ import styled, { ThemeProvider, createGlobalStyle } from 'styled-components'
 
 import Hello from '../images/hello.png'
 import Flag from '../images/flag.png'
+import Bicep from '../images/bicep.png'
+import Frame from '../images/frame.png'
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -41,6 +43,44 @@ const Image = styled.img`
   width: ${props => props.width};
 `
 
+const Card = styled.a`
+  background: ${props => props.background};
+  width: 220px;
+  height: 170px;
+  margin: 10px;
+  box-align: center;
+  text-alignt: center;
+  justify-content: center;
+  display: inline-table;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  box-sizing: border-box;
+  text-align: center;
+
+  @media (max-width: 500px) {
+    width: 90%;
+    height: 100%;
+  }
+
+  h3 {
+    margin-block-start: 0.2em;
+    margin-block-end: 0.2em;
+  }
+
+  p {
+    font-size: 1em;
+    display: inline-table;
+    text-decoration: none;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+  }
+`
+
+const FlagImage = () => <Image src={Flag} width="20px" alt="flag" />
+const BicepImage = () => <Image src={Bicep} width="20px" alt="bicep" />
+const FrameImage = () => <Image src={Frame} width="20px" alt="frame" />
+
 const Index = () => (
   <div>
     <GlobalStyle />
@@ -50,26 +90,63 @@ const Index = () => (
     </Head>
     <HorizontalCenter>
       <Title>
-        Hello.
-        <Image src={Hello} alt="wave" />
+        Hello. <Image src={Hello} alt="wave" />
       </Title>
 
-      <Subtitle>My name is Louie.</Subtitle>
+      <Subtitle>My name is Louie Jake Bell.</Subtitle>
+
+      <Anchor target="_blank" href="https://twitter.com/louiejakebell">
+        Twitter
+      </Anchor>
+      {' • '}
+      <Anchor target="_blank" href="https://github.com/louiejakebell">
+        GitHub
+      </Anchor>
+      {' • '}
+      <Anchor target="_blank" href="https://www.linkedin.com/in/louiejakebell/">
+        LinkedIn
+      </Anchor>
+
       <Paragraph>
-        I am a Front End Developer working in central London{' '}
-        <Image src={Flag} width="24px" alt="flag" />. I currently work @ Dunelm
-        as a Front End Developer. Prior to this, I worked @ Gamesys starting off
-        as a Graduate Software Engineer followed by a promotion to a Front End
-        Developer.
-        {/* graduated from
-        Portsmouth University in 2016 with a degree in Software Engineering. My
-        first job in this industry started in August 2016 as a Graduate Software
-        Engineer @ Gamesys. I was promoted to a Front End Developer role in
-        March 2018 at the same company. My latest career change was in May 2019
-        when I joined Dunelm as a Front End Developer where I am currently
-        working. */}
-        {/* <Anchor href="https://twitter.com/louiejakebell">here</Anchor>  */}
+        I am a Front End Developer working in London <FlagImage />. I currently
+        work @ Dunelm as a Front End Developer. Prior to this, I worked @
+        Gamesys starting off as a Graduate Software Engineer followed by a
+        promotion to a Front End Developer.
       </Paragraph>
+
+      <Paragraph>
+        I have a couple of my side projects listed below. The first is a gym
+        tracker web app <BicepImage /> and the second is a photo composition web
+        app <FrameImage />. The tech stacks used in either / both include: Next,
+        React, Redux, styled-components, lambda functions, MongoDB &
+        styled-components.
+      </Paragraph>
+
+      <Card
+        target="_blank"
+        href="https://trackify.netlify.com"
+        background="rgb(110, 15, 250)"
+      >
+        <h3>trackify</h3>
+        <p>
+          gym tracker web app with registration + login. set schedules, save
+          progress & visualize data. view other user profiles.
+        </p>
+        <BicepImage />
+      </Card>
+
+      <Card
+        target="_blank"
+        href="https://composify.netlify.com"
+        background="#00b894"
+      >
+        <h3>composify</h3>
+        <p>
+          a photo composition web app. add a customized # of cards, upload a
+          photo inside each and view all photos in a responsive composition.
+        </p>
+        <FrameImage />
+      </Card>
     </HorizontalCenter>
   </div>
 )
