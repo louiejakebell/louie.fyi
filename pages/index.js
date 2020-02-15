@@ -118,8 +118,7 @@ const Index = () => (
         I have a couple of my side projects listed below. The first is a gym
         tracker web app <BicepImage /> and the second is a photo composition web
         app <FrameImage />. The tech stacks used in either / both include: Next,
-        React, Redux, styled-components, lambda functions, MongoDB &
-        styled-components.
+        React, Redux, styled-components, lambda functions & MongoDB.
       </Paragraph>
 
       <Card
