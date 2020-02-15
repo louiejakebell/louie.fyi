@@ -143,8 +143,8 @@ const Index = () => (
       >
         <h3>composify</h3>
         <p>
-          a photo composition web app. add a customized # of cards, upload a
-          photo inside each and view all photos in a responsive composition.
+          a photo composition web app. add a customized # of cards & upload
+          images inside each to create a composition.
         </p>
         <FrameImage />
       </Card>
