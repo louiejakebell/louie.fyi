@@ -124,7 +124,7 @@ const Index = () => (
       <Card
         target="_blank"
         href="https://trackify.netlify.com"
-        background="ghostwhite"
+        background="lightgrey"
         color="black"
       >
         <h3>trackify</h3>
