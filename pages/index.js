@@ -45,6 +45,7 @@ const Image = styled.img`
 
 const Card = styled.a`
   background: ${props => props.background};
+  color: ${props => props.color};
   width: 220px;
   height: 170px;
   margin: 10px;
@@ -54,7 +55,6 @@ const Card = styled.a`
   display: inline-table;
   padding: 10px;
   border-radius: 5px;
-  color: white;
   box-sizing: border-box;
   text-align: center;
 
@@ -124,7 +124,8 @@ const Index = () => (
       <Card
         target="_blank"
         href="https://trackify.netlify.com"
-        background="rgb(110, 15, 250)"
+        background="ghostwhite"
+        color="black"
       >
         <h3>trackify</h3>
         <p>
@@ -138,6 +139,7 @@ const Index = () => (
         target="_blank"
         href="https://composify.netlify.com"
         background="#00b894"
+        color="white"
       >
         <h3>composify</h3>
         <p>
