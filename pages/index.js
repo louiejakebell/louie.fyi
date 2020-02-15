@@ -59,7 +59,7 @@ const Card = styled.a`
   text-align: center;
 
   @media (max-width: 500px) {
-    width: 90%;
+    width: 95%;
     height: 100%;
   }
 
