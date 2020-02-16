@@ -2,6 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components'
 
+import Profile from '../images/pafos.jpeg'
 import Hello from '../images/hello.png'
 import Flag from '../images/flag.png'
 import Bicep from '../images/bicep.png'
@@ -16,10 +17,12 @@ const GlobalStyle = createGlobalStyle`
 
 const Title = styled.h1`
   font-size: 4em;
+  margin-block-end: 0.3em;
 `
 
 const Subtitle = styled.h2`
   font-size: 2em;
+  margin-block-start: 0.3em;
 `
 
 const Paragraph = styled.p`
@@ -77,6 +80,7 @@ const Card = styled.a`
   }
 `
 
+const ProfileImage = () => <Image src={Profile} width="140px" alt="profile" />
 const FlagImage = () => <Image src={Flag} width="20px" alt="flag" />
 const BicepImage = () => <Image src={Bicep} width="20px" alt="bicep" />
 const FrameImage = () => <Image src={Frame} width="20px" alt="frame" />
@@ -92,6 +96,7 @@ const Index = () => (
       <Title>
         Hello. <Image src={Hello} alt="wave" />
       </Title>
+      <ProfileImage />
 
       <Subtitle>My name is Louie Jake Bell.</Subtitle>
 
@@ -105,6 +110,10 @@ const Index = () => (
       {' • '}
       <Anchor target="_blank" href="https://www.linkedin.com/in/louiejakebell/">
         LinkedIn
+      </Anchor>
+      {' • '}
+      <Anchor href="mailto:louiejakebell@gmail.com">
+        Email
       </Anchor>
 
       <Paragraph>
