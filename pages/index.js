@@ -96,7 +96,6 @@ const Index = () => (
       <Title>
         Hello. <Image src={Hello} alt="wave" />
       </Title>
-      <ProfileImage />
 
       <Subtitle>My name is Louie Jake Bell.</Subtitle>
 
