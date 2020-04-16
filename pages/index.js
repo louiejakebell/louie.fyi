@@ -97,7 +97,7 @@ const Index = () => (
         Hello. <Image src={Hello} alt="wave" />
       </Title>
 
-      <Subtitle>My name is Louie Jake Bell.</Subtitle>
+      <Subtitle>My name is Louie.</Subtitle>
 
       <Anchor target="_blank" href="https://twitter.com/louiejakebell">
         Twitter
@@ -116,10 +116,10 @@ const Index = () => (
       </Anchor>
 
       <Paragraph>
-        I am a Front End Developer working in London <FlagImage />. I currently
+        I am a developer working in London <FlagImage />. I currently
         work @ Dunelm as a Front End Developer. Prior to this, I worked @
-        Gamesys starting off as a Graduate Software Engineer followed by a
-        promotion to a Front End Developer.
+        Gamesys starting off as a Graduate Software Engineer; trying out different
+        languages until I made the decision to focus my career on JavaScript.
       </Paragraph>
 
       <Paragraph>
