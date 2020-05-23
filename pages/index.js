@@ -50,16 +50,13 @@ const Card = styled.a`
   background: ${props => props.background};
   color: ${props => props.color};
   width: 220px;
-  height: 180px;
+  height: 160px;
   margin: 10px;
-  box-align: center;
-  text-alignt: center;
-  justify-content: center;
+  text-alignt: left;
   display: inline-table;
   padding: 10px;
   border-radius: 5px;
   box-sizing: border-box;
-  text-align: center;
 
   @media (max-width: 500px) {
     width: 95%;
