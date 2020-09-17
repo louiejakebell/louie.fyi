@@ -59,7 +59,6 @@ const Card = styled.a`
   color: ${props => props.color};
   max-width: 400px;
   height: 100%;
-  margin: 1rem 0 1rem 0;
   padding: 1em 2em;
   border-radius: 5px;
   display: inline-table;
