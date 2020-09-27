@@ -8,6 +8,7 @@ import Flag from '../images/flag.png'
 import Bicep from '../images/bicep.png'
 import Frame from '../images/frame.png'
 import Earth from '../images/earth.png'
+import Message from '../images/message.png'
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -54,12 +55,66 @@ const Image = styled.img`
   width: ${props => props.width};
 `
 
+const orange = '#f19666'
+const purple = '#503283'
+const lightPurple = '#9990FA'
+
+export const theme = {
+  pageWidth: '500px',
+  fontWeight: '450',
+  color: '#f1f2f3',
+  gradientBlue:
+    'linear-gradient( 90deg, rgba(2, 0, 36, 1) 0%, rgba(232, 232, 232, 1) 0%, rgba(169, 156, 255, 1) 65% )',
+  green: 'forestgreen',
+  yellow: '#fdcb6e',
+  blue: 'mediumblue',
+  dark: '#484850',
+  grey: '#b2bec3',
+  red: 'darkred',
+  darkGrey: '#6c757d',
+  borderRadius: '5px',
+  extraSmall: '14px',
+  small: '16px',
+  medium: '18px',
+  large: '20px',
+  inputColor: '#f7f1e3',
+  extraLarge: '22px',
+  lightGrey: '#dfe6e9',
+  headerHeight: '70px',
+  fontFamily: `"Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";`,
+  orange,
+  purple,
+  lightPurple,
+  palette: [
+    purple,
+    '#005bae',
+    '#0aa360',
+    orange,
+    lightPurple,
+    `#d63333`,
+    `#636a80`
+  ],
+  titleBackground: '#485460',
+  gradientPalette: [
+    `linear-gradient(to top, #505285 0%, #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%, #8389c7 62%, #9795d4 75%, #a2a1dc 87%, #b5aee4 100%);`,
+    `linear-gradient(to left, #BDBBBE 0%, #9D9EA3 100%), radial-gradient(88% 271%, rgba(255, 255, 255, 0.25) 0%, rgba(254, 254, 254, 0.25) 1%, rgba(0, 0, 0, 0.25) 100%), radial-gradient(50% 100%, rgba(255, 255, 255, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%);
+      background-blend-mode: normal, lighten, soft-light;`,
+    'linear-gradient(to top, #00c6fb 0%, #005bea 100%);',
+    'linear-gradient(to top, #0ba360 0%, #3cba92 100%);',
+    'linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);',
+    'linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);',
+    `linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; 
+      background-blend-mode: multiply,multiply;`
+  ]
+}
+
 const Card = styled.a`
   background: ${props => props.background};
   color: ${props => props.color};
   max-width: 400px;
   height: 100%;
   padding: 1em 2em;
+  margin: 1em 0;
   border-radius: 5px;
   display: inline-table;
   text-decoration: none;
@@ -140,6 +195,7 @@ const FlagImage = () => <Image src={Flag} width="20px" alt="flag" />
 const BicepImage = () => <Image src={Bicep} width="20px" alt="bicep" />
 const FrameImage = () => <Image src={Frame} width="20px" alt="frame" />
 const EarthImage = () => <Image src={Earth} width="20px" alt="earth" />
+const MessageImage = () => <Image src={Message} width="20px" alt="message" />
 
 const Index = () => (
   <div>
@@ -196,11 +252,26 @@ const Index = () => (
         color="white"
       >
         <CardTitle>trackify</CardTitle>
-        <BicepImage src={Bicep} alt="bicep" />
+        <BicepImage />
         <Paragraph>
           A serverless gym tracker web application used to visualize workout
           progress. Features include: registration, login, customised gym plans,
           adding exercises, saving progress data, searching profiles.
+        </Paragraph>
+      </Card>
+
+      <Card
+        target="_blank"
+        href="https://msngr.netlify.com"
+        background="#dfe6e9"
+        color="black"
+      >
+        <CardTitle>msngr</CardTitle>
+        <MessageImage />
+        <Paragraph>
+          A small realtime messaging web application with a quick and easy way
+          to start a quick chat with a friend / colleague. Developed using the
+          WebSocket API, Next, React, AWS Lambda Functions, DynamoDB.
         </Paragraph>
       </Card>
     </HorizontalCenter>
