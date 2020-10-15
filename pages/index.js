@@ -2,13 +2,13 @@ import React from 'react'
 import Head from 'next/head'
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components'
 
-import Profile from '../images/pafos.jpeg'
 import Hello from '../images/hello.png'
 import Flag from '../images/flag.png'
 import Bicep from '../images/bicep.png'
 import Frame from '../images/frame.png'
 import Earth from '../images/earth.png'
 import Message from '../images/message.png'
+import Money from '../images/money.png'
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -143,12 +143,12 @@ const Curve = () => (
   </CurveStyles>
 )
 
-const ProfileImage = () => <Image src={Profile} width="140px" alt="profile" />
 const FlagImage = () => <Image src={Flag} width="20px" alt="flag" />
 const BicepImage = () => <Image src={Bicep} width="20px" alt="bicep" />
 const FrameImage = () => <Image src={Frame} width="20px" alt="frame" />
 const EarthImage = () => <Image src={Earth} width="20px" alt="earth" />
 const MessageImage = () => <Image src={Message} width="20px" alt="message" />
+const MoneyImage = () => <Image src={Money} width="20px" alt="money" />
 
 const Index = () => (
   <div>
@@ -225,6 +225,21 @@ const Index = () => (
           A small realtime messaging web application with an easy way to start a
           quick chat with a friend / colleague. Developed using the WebSocket
           API, Next, React, AWS Lambda Functions, DynamoDB.
+        </Paragraph>
+      </Card>
+
+      <Card
+        target="_blank"
+        href="https://exchangify.netlify.com"
+        background="#B47978"
+        color="white"
+      >
+        <CardTitle>exchangify</CardTitle>
+        <MoneyImage />
+        <Paragraph>
+          A small web application used to convert currencies and exchange money
+          between wallets. Developed using the React, Context API, Next, Netlify
+          Lambda Functions.
         </Paragraph>
       </Card>
     </HorizontalCenter>
