@@ -24,7 +24,7 @@
     ]
   },
   "dependencies": {
-    "next": "^9.1.6",
+    "next": "^9.3.2",
     "next-compose-plugins": "^2.2.0",
     "next-optimized-images": "^2.5.4",
     "react": "^16.11.0",
