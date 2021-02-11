@@ -9,7 +9,7 @@ const Paragraph = styled.p`
 
 const Card = styled.a`
   background: ${props => props.background};
-  color: ${props => props.color};
+  color: ${props => props.theme.activeColor};
   touch-action: pan-y;
   width: 400px;
   flex-grow: 0;
@@ -39,14 +39,15 @@ const Card = styled.a`
 `
 
 const Title = styled.h1`
-  font-size: 4em;
-  margin-block-end: 0.3em;
+  font-size: 2rem;
+  margin: 1rem 0.2rem 1rem 0.2rem;
   display: inline-block;
 `
 
 const Subtitle = styled.h2`
-  font-size: 2em;
-  margin-block-start: 0.3em;
+  font-size: 1.2rem;
+  margin: 0;
+  margin: 0.3em;
 `
 
 const ParagraphTitle = styled.h3`
@@ -58,6 +59,7 @@ const HorizontalCenter = styled.div`
   margin: 0 auto;
   display: table;
   max-width: 500px;
+  padding: 2rem 0;
 `
 
 const Anchor = styled.a`
