@@ -11,6 +11,7 @@ const Card = styled.a`
   background: ${props => props.background};
   color: ${props => props.theme.activeColor};
   touch-action: pan-y;
+  width: 100%;
   flex-grow: 0;
   flex-shrink: 0;
   padding: 1em 2em;
