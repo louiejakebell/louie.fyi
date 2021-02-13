@@ -73,12 +73,12 @@ const Image = styled.img`
 `
 
 const CardTitle = styled.h3`
-  display: inline-block;
+  display: table;
+  margin: 0 auto;
   text-decoration: none;
   font-size: 1.2rem;
   width: fit-content;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
+  text-align: center;
 
   span {
     font-size: 1rem;

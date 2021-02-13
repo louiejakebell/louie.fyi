@@ -48,6 +48,10 @@ const ProfileImage = styled.img`
   margin: 0 auto;
 `
 
+const SocialIcons = styled.div`
+  text-align: center;
+`
+
 const FlagImage = () => <Image src={Flag} width="20px" alt="flag" />
 const BicepImage = () => <Image src={Bicep} width="20px" alt="bicep" />
 const MessageImage = () => <Image src={Message} width="20px" alt="message" />
@@ -71,19 +75,24 @@ const Index = () => (
     </Header>
 
     <HorizontalCenter>
-      <Anchor target="_blank" href="https://twitter.com/louiejakebell">
-        Twitter
-      </Anchor>
-      {' • '}
-      <Anchor target="_blank" href="https://github.com/louiejakebell">
-        GitHub
-      </Anchor>
-      {' • '}
-      <Anchor target="_blank" href="https://www.linkedin.com/in/louiejakebell/">
-        LinkedIn
-      </Anchor>
-      {' • '}
-      <Anchor href="mailto:louiejakebell@gmail.com">Email</Anchor>
+      <SocialIcons>
+        <Anchor target="_blank" href="https://twitter.com/louiejakebell">
+          Twitter
+        </Anchor>
+        {' • '}
+        <Anchor target="_blank" href="https://github.com/louiejakebell">
+          GitHub
+        </Anchor>
+        {' • '}
+        <Anchor
+          target="_blank"
+          href="https://www.linkedin.com/in/louiejakebell/"
+        >
+          LinkedIn
+        </Anchor>
+        {' • '}
+        <Anchor href="mailto:louiejakebell@gmail.com">Email</Anchor>
+      </SocialIcons>
 
       <Paragraph>
         I am a Front End Developer from London <FlagImage /> with a passion for
@@ -106,8 +115,11 @@ const Index = () => (
           background="#F7F3E3"
           color="white"
         >
-          <CardTitle>setwork</CardTitle>
-          <BicepImage />
+          <CardTitle>
+            setwork
+            <BicepImage />
+          </CardTitle>
+
           <Paragraph>
             A gym network used to track and visualize workout progress. Features
             include: registration, login, creating customised plans, adding new
@@ -122,8 +134,11 @@ const Index = () => (
           background="#DAC4F7"
           color="white"
         >
-          <CardTitle>msngr</CardTitle>
-          <MessageImage />
+          <CardTitle>
+            msngr
+            <MessageImage />
+          </CardTitle>
+
           <Paragraph>
             A small realtime messaging web application with an easy way to start
             a quick chat with a friend / colleague. Developed using the
@@ -137,8 +152,11 @@ const Index = () => (
           background="#D6F6DD"
           color="white"
         >
-          <CardTitle>exchangify</CardTitle>
-          <MoneyImage />
+          <CardTitle>
+            exchangify
+            <MoneyImage />
+          </CardTitle>
+
           <Paragraph>
             A small web application used to convert currencies and exchange
             money between wallets. Developed using the React, Context API,
