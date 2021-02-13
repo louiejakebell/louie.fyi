@@ -97,13 +97,13 @@ const Index = () => (
       <Paragraph>
         I am a Front End Developer from London <FlagImage /> with a passion for
         React / Next.js. I love developing JavaScript applications and I made
-        the the decision early in my career to pursue this language.
+        the decision early in my career to pursue this language.
       </Paragraph>
 
       <Paragraph>
         My prominent experience is with the following technologies / frameworks:
         JavaScript, TypeScript, CSS, styled-components, Next.js, React, Redux,
-        webpack, Node, Jest, React Testing Library and Netlify.
+        Node, Jest, React Testing Library and Netlify.
       </Paragraph>
 
       <ParagraphTitle>Featured side projects</ParagraphTitle>
